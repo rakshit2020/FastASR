@@ -30,13 +30,25 @@ In our scripts, we primarily use openai/whisper-large-v3 and distil-whisper larg
 
 ## Optimized Inference Methods
 
-We focus on five optimized methods for GPU inference:
+### We focus on five optimized methods for GPU inference:
 
-1. [fp16 + SDPA](Scripts/GPU_INFERENCE/FP16 + SDPA.md)
-2. fp16 + SDPA + Speculative Decoding
-3. Distil-whisper + fp16 + SDPA + Chunking
-4. fp16 + SDPA + Chunking + Speculative Decoding
-5. Whisper Medusa
+1. [fp16 + SDPA](Scripts/GPU_INFERENCE/FP16+SDPA.md)
+2. [fp16 + SDPA + Speculative Decoding](Scripts/GPU_INFERENCE/fp16+SDPA+SpeculativeDecoding.md)
+3. [Distil-whisper + fp16 + SDPA + Chunking](Scripts/GPU_INFERENCE/Distil-whisper+fp16+SDPA+Chunking.md)
+4. [fp16 + SDPA + Chunking + Speculative Decoding](Scripts/GPU_INFERENCE/fp16+SDPA+Chunking+SpeculativeDecoding.md)
+5. [Whisper Medusa](Scripts/GPU_INFERENCE/Whisper_Medusa.md)
 
 Each method is designed to balance speed and accuracy for different use cases.
 
+### We focus on two optimized methods for CPU inference:
+
+1. [Faster-Whisper](Scripts/CPU_INFERENCE/Faster-Whisper.md)
+2. [Whisper.cpp](Scripts/CPU_INFERENCE/WhisperCPP.md)
+
+## Support and Contributions
+
+If you find this project helpful or interesting, please consider giving it a star ⭐️ on GitHub. Your support helps make this resource more visible to other developers who might benefit from it.
+
+We're always looking to improve and expand our collection of ASR inference optimization techniques. If you have experience with other optimized methods for ASR inference or have developed your own optimizations, we'd love to hear from you! Feel free to open an issue to discuss new ideas or submit a pull request with your contributions. Whether it's a new optimization technique, an improvement to existing scripts, or documentation enhancements, your input is valuable to the community.
+
+Together, we can make this repository an even more comprehensive resource for ASR developers. Thank you for your interest and support!
